@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/labelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/idproduct"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelid"
+        android:layout_below="@+id/labelid"
+        android:layout_marginTop="16dp"
+        android:text="@string/nameproduct"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pnamevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelname"
+        android:layout_alignBottom="@+id/labelname"
+        android:layout_alignLeft="@+id/pidvalue"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ppricevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelprice"
+        android:layout_alignLeft="@+id/pnamevalue"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/updatebtn"
+        android:layout_alignBottom="@+id/updatebtn"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/updatebtn"
+        android:onClick="deleteProduct"
+        android:text="@string/delete" />
+
+    <TextView
+        android:id="@+id/labelprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelname"
+        android:layout_below="@+id/labelname"
+        android:layout_marginTop="21dp"
+        android:text="@string/priceproduct"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pidvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/labelname"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/labelname"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/labelprice"
+        android:layout_below="@+id/labelprice"
+        android:layout_marginTop="32dp"
+        android:onClick="updateProduct"
+        android:text="@string/update" />
+
+</RelativeLayout>

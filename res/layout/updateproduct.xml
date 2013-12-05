@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/headerthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/updateproduct"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ulname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerthree"
+        android:layout_marginTop="57dp"
+        android:text="@string/oldname"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/updatedname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ulname"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/ulprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatedname"
+        android:layout_marginTop="26dp"
+        android:text="@string/oldprice"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/updatedprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ulprice"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/updatevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatedprice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:onClick="updateProductDetail"
+        android:text="@string/upbtn" />
+
+</RelativeLayout>
